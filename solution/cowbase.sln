@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cowbase", "..\cowbase\cowbase.csproj", "{906C0F09-3788-4CA2-8044-8365DE554808}"
+EndProject
+Project("{B900F1C2-3D47-4FEC-85B3-04AAF18C3634}") = "CowBaseInstall", "..\CowBaseInstall\CowBaseInstall.vddproj", "{62606BB2-B4B2-41A4-A414-63EA8EFEC258}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cowbasemock", "..\cowbasemock\cowbasemock.csproj", "{3B082F76-BDA6-4301-B6D6-3B687C1DE8EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gma.UserActivityMonitor", "..\Gma.UserActivityMonitor\Gma.UserActivityMonitor.csproj", "{F52AA97E-180A-40ED-8F2B-09080171D6C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CowbaseUpdater", "..\CowbaseUpdater\CowbaseUpdater.csproj", "{92BC96FB-13A8-4108-9558-A1849C2C57A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{906C0F09-3788-4CA2-8044-8365DE554808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{906C0F09-3788-4CA2-8044-8365DE554808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{906C0F09-3788-4CA2-8044-8365DE554808}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{906C0F09-3788-4CA2-8044-8365DE554808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{906C0F09-3788-4CA2-8044-8365DE554808}.Release|Any CPU.Build.0 = Release|Any CPU
+		{906C0F09-3788-4CA2-8044-8365DE554808}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{62606BB2-B4B2-41A4-A414-63EA8EFEC258}.Debug|Any CPU.ActiveCfg = Debug
+		{62606BB2-B4B2-41A4-A414-63EA8EFEC258}.Release|Any CPU.ActiveCfg = Release
+		{3B082F76-BDA6-4301-B6D6-3B687C1DE8EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B082F76-BDA6-4301-B6D6-3B687C1DE8EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B082F76-BDA6-4301-B6D6-3B687C1DE8EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B082F76-BDA6-4301-B6D6-3B687C1DE8EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F52AA97E-180A-40ED-8F2B-09080171D6C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F52AA97E-180A-40ED-8F2B-09080171D6C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F52AA97E-180A-40ED-8F2B-09080171D6C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F52AA97E-180A-40ED-8F2B-09080171D6C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92BC96FB-13A8-4108-9558-A1849C2C57A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92BC96FB-13A8-4108-9558-A1849C2C57A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92BC96FB-13A8-4108-9558-A1849C2C57A5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{92BC96FB-13A8-4108-9558-A1849C2C57A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92BC96FB-13A8-4108-9558-A1849C2C57A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92BC96FB-13A8-4108-9558-A1849C2C57A5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <DeployDeviceID>BD0CC567-F6FD-4ca3-99D2-063EFDFC0A39EF64D70E-4547-4b10-A600-951D9EC67647</DeployDeviceID>
+    <GenerateResourceNeverLockTypeAssemblies>true</GenerateResourceNeverLockTypeAssemblies>
+    <ReferencePath>
+    </ReferencePath>
+    <NETCFDeploy>true</NETCFDeploy>
+  </PropertyGroup>
+</Project>

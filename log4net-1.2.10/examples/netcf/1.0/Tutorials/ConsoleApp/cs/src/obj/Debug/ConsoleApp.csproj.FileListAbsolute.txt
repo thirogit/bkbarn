@@ -1,0 +1,6 @@
+C:\Users\root\Desktop\log4net-1.2.10\examples\netcf\1.0\Tutorials\ConsoleApp\cs\src\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\root\Desktop\log4net-1.2.10\examples\netcf\1.0\Tutorials\ConsoleApp\cs\build\netcf\1.0\debug\ConsoleApp.exe.config
+C:\Users\root\Desktop\log4net-1.2.10\examples\netcf\1.0\Tutorials\ConsoleApp\cs\build\netcf\1.0\debug\ConsoleApp.exe
+C:\Users\root\Desktop\log4net-1.2.10\examples\netcf\1.0\Tutorials\ConsoleApp\cs\build\netcf\1.0\debug\ConsoleApp.pdb
+C:\Users\root\Desktop\log4net-1.2.10\examples\netcf\1.0\Tutorials\ConsoleApp\cs\src\obj\Debug\ConsoleApp.exe
+C:\Users\root\Desktop\log4net-1.2.10\examples\netcf\1.0\Tutorials\ConsoleApp\cs\src\obj\Debug\ConsoleApp.pdb

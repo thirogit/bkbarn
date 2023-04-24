@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{906C0F09-3788-4CA2-8044-8365DE554808}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cowbase</RootNamespace>
+    <AssemblyName>cowbase</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.00</OSVersion>
+    <DeployDirSuffix>BazaKrowek</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FormFactorID>
+    </FormFactorID>
+    <ApplicationIcon>cattlebase.ico</ApplicationIcon>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <DeployDirPrefix>%25CSIDL_PROGRAM_FILES%25</DeployDirPrefix>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\log4net-1.2.10\bin\netcf\1.0\release\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsCE.Forms" />
+    <Reference Include="mscorlib" />
+    <Reference Include="OpenNETCF, Version=2.3.0.39, Culture=neutral, PublicKeyToken=e60dbea84bb431b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenNETCF\Smart Device Framework\2.3\Bin\OpenNETCF.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenNETCF.Net.Mail, Version=2.3.0.39, Culture=neutral, PublicKeyToken=e60dbea84bb431b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenNETCF\Smart Device Framework\2.3\Bin\OpenNETCF.Net.Mail.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenNETCF.Windows.Forms, Version=2.3.0.39, Culture=neutral, PublicKeyToken=e60dbea84bb431b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenNETCF\Smart Device Framework\2.3\Bin\OpenNETCF.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenNETCF.WindowsCE, Version=2.3.0.39, Culture=neutral, PublicKeyToken=e60dbea84bb431b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenNETCF\Smart Device Framework\2.3\Bin\OpenNETCF.WindowsCE.dll</HintPath>
+    </Reference>
+    <Reference Include="Symbol, Version=1.6.1.4, Culture=neutral, PublicKeyToken=68ec8db391f150ca" />
+    <Reference Include="Symbol.Audio, Version=1.6.1.2, Culture=neutral, PublicKeyToken=68ec8db391f150ca" />
+    <Reference Include="Symbol.Barcode, Version=1.6.1.18, Culture=neutral, PublicKeyToken=68ec8db391f150ca" />
+    <Reference Include="Symbol.StandardForms, Version=1.6.1.5, Culture=neutral, PublicKeyToken=68ec8db391f150ca" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlClient, Version=3.0.3600.0, Culture=neutral, PublicKeyToken=3be235df1c8d2ad3, processorArchitecture=MSIL" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3be235df1c8d2ad3, processorArchitecture=MSIL" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AskYesNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCDevice.cs" />
+    <Compile Include="BigOKMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ButtonList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buzzer.cs" />
+    <Compile Include="BuzzerDevice.cs" />
+    <Compile Include="CattleBaseSQL.cs" />
+    <Compile Include="CATTLEInsertState.cs" />
+    <Compile Include="CATTLESyncState.cs" />
+    <Compile Include="CenterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseSex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientSocket.cs" />
+    <Compile Include="Action.cs" />
+    <Compile Include="CloseChunk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CloseChunk.Designer.cs">
+      <DependentUpon>CloseChunk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CowData.cs" />
+    <Compile Include="CowDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CowDetails.Designer.cs">
+      <DependentUpon>CowDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CowGroupAccessor.cs" />
+    <Compile Include="CowItemStringFormetter.cs" />
+    <Compile Include="CowListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CowSex.cs" />
+    <Compile Include="CSVReader.cs" />
+    <Compile Include="DispatchState.cs" />
+    <Compile Include="DocData.cs" />
+    <Compile Include="DocItemStringFormatter.cs" />
+    <Compile Include="DocListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DocListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DOCSyncState.cs" />
+    <Compile Include="EaringBCReader.cs">
+    </Compile>
+    <Compile Include="EditCow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditInDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditOutDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnterEANForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindCowByEAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodBadNotify.cs" />
+    <Compile Include="HENTSInsertState.cs" />
+    <Compile Include="InDocCowGroupAccessor.cs" />
+    <Compile Include="InDocCowItemStringFormetter.cs" />
+    <Compile Include="InDocListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InDocPassSearchDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INDOCSInsertState.cs" />
+    <Compile Include="INDOCSSyncState.cs" />
+    <Compile Include="ItemStringFormatter.cs" />
+    <Compile Include="Keypad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOG.cs" />
+    <Compile Include="LogString.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemoryUsage.cs" />
+    <Compile Include="MyListbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyPriceCalculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewChunk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewChunk.Designer.cs">
+      <DependentUpon>NewChunk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewDocForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewInDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewOrEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewOutDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewOutDocChunkCowValidator.cs" />
+    <Compile Include="NmKeypad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutboxDirAppender.cs" />
+    <Compile Include="OutDocCowGroupAccessor.cs" />
+    <Compile Include="OutDocCowItemStringFormatter.cs" />
+    <Compile Include="OutDocListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutDocPassSearchDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OUTDOCSSyncState.cs" />
+    <Compile Include="OwnerDataListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PassSearchCowItem.cs" />
+    <Compile Include="PassSearchCowItemStringFormetter.cs" />
+    <Compile Include="PassSearchCowListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PassSearchDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="AskYesNo.resx">
+      <DependentUpon>AskYesNo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BigOKMessageBox.resx">
+      <DependentUpon>BigOKMessageBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ButtonList.resx">
+      <DependentUpon>ButtonList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CloseChunk.resx">
+      <DependentUpon>CloseChunk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CowDetails.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CowDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocListView.resx">
+      <DependentUpon>DocListView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCow.resx">
+      <DependentUpon>EditCow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditOutDoc.resx">
+      <DependentUpon>EditOutDoc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Keypad.resx">
+      <DependentUpon>Keypad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyPriceCalculator.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MyPriceCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewChunk.resx">
+      <DependentUpon>NewChunk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewDocForm.resx">
+      <DependentUpon>NewDocForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NmKeypad.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NmKeypad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassSearchDlg.resx">
+      <DependentUpon>PassSearchDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThreeBtnsOpt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ThreeBtnsOpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCattle.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UpdateCattle.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchPassInInDocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchPassInOutDocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="SQLBuilder.cs" />
+    <Compile Include="Stock.cs" />
+    <Compile Include="STOCKSInsertState.cs" />
+    <Compile Include="SymbolBCDevice.cs" />
+    <Compile Include="SymbolBuzzer.cs" />
+    <Compile Include="SyncLockMessage.cs" />
+    <Compile Include="SyncState.cs" />
+    <Compile Include="TableFactory.cs" />
+    <Compile Include="TableInsertFactory.cs" />
+    <Compile Include="TableInsertState.cs" />
+    <Compile Include="TableSyncFactory.cs" />
+    <Compile Include="TermSellValuesDistributeStrategy.cs" />
+    <Compile Include="ThreeBtnsOpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThreeBtnsOpt.Designer.cs">
+      <DependentUpon>ThreeBtnsOpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCattle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils.cs" />
+    <Compile Include="wheres\AndWhere.cs" />
+    <Compile Include="wheres\CowInStockWhere.cs" />
+    <Compile Include="wheres\CowWhere.cs" />
+    <Compile Include="wheres\EanWhere.cs" />
+    <Compile Include="wheres\InDocNoWhere.cs" />
+    <Compile Include="wheres\OutDocNoWhere.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cattlebase.ico" />
+    <None Include="Resources\ACTIVESYNC.png" />
+    <None Include="Resources\REASONSSQL.DEF" />
+    <None Include="Resources\HENTTYPESSQL.DEF" />
+    <None Include="Resources\SYNCLOCKSQL.DEF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="BazaKrowek.lnkx" />
+    <None Include="Resources\CATTLESQL.DEC" />
+    <None Include="Resources\HENTSSQL.DEC" />
+    <None Include="Resources\HENTTYPESSQL.DEC" />
+    <None Include="Resources\INDOCSSQL.DEC" />
+    <None Include="Resources\OUTDOCSSQL.DEC" />
+    <None Include="Resources\REASONSSQL.DEC" />
+    <None Include="Resources\STOCKSSQL.DEC" />
+    <None Include="Resources\SYNCLOCKSQL.DEC" />
+  </ItemGroup>
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v1.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.v1.targets" />
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v2.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v3.5'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"$(SolutionDir)IncBuildNo" "$(ProjectDir)Properties\AssemblyInfo.cs" $(ConfigurationName)</PostBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v3.5'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+</Project>

@@ -1,0 +1,127 @@
+===============================================================================
+Log File:             	H:\KGK2\DEVELOPMENT\VC#\COMPONENTS\CSLMAIL\HELP\DISTRIBUTION\H2Reg_Log.txt
+Date:                 	1/10/2006 5:58:07 PM
+Operating System:      	Windows XP 5.1 (Build 2600) Service Pack 2
+SysLocale.DefaultLCID: 	0x0409 (1033)
+SysLocale.PriLangID:   	0x0009 (9)
+SysLocale.SubLangID:   	0x0001 (1)
+DecimalSeparator:      	.
+-------------------------------------------------------------------------------
+EXE Path =          	H:\KGK2\DEVELOPMENT\VC#\COMPONENTS\CSLMAIL\HELP\DISTRIBUTION\H2Reg.exe
+EXE Version =       	1.4.3.0
+Cmdline Param(s) =  	/r | cmdfile=h2reg_cmd.ini
+Actual CmdLine =  	H2Reg.exe /r "cmdfile=h2reg_cmd.ini"
+_RunDir =           	H:\KGK2\DEVELOPMENT\VC#\COMPONENTS\CSLMAIL\HELP\DISTRIBUTION
+_ModuleName =       	H2Reg.exe
+_ModuleDir =        	H:\KGK2\DEVELOPMENT\VC#\COMPONENTS\CSLMAIL\HELP\DISTRIBUTION
+_ModulePath =        	H:\KGK2\DEVELOPMENT\VC#\COMPONENTS\CSLMAIL\HELP\DISTRIBUTION\H2Reg.exe
+Module Version =       	1.4.3.0
+-------------------------------------------------------------------------------
+_hhInstalled =      	YES
+_hhVerStr =         	5.2.3790.2453
+_hhFriendlyVerStr = 	> 1.4a
+-------------------------------------------------------------------------------
+_ieInstalled =      	YES
+_ieVerStr =         	6.0.2900.2805
+_ieFriendlyVerStr = 	Internet Explorer 6 (Windows XP SP2)
+===============================================================================
+MS Help 2.x Runtime Found: YES
+    2.5.50727.42, C:\Program Files\Common Files\Microsoft Shared\Help\hxds.dll
+    2.5.50727.42, C:\Program Files\Common Files\Microsoft Shared\Help\hxvz.dll
+NT Admin Log On: YES
+PC Language ID = en
+-------------------------------------------------------------------------------
+Quiet Mode (-Q): No
+Registration Mode (-R): Yes
+UnRegistration Mode (-U): No
+Append Log Mode (-A): No
+No NT Admin Check (-N): No
+Merge Indexes Mode (-M): No
+Cmd Script File (CmdFile=): h2reg_cmd.ini
+User Dir 1 (UserDir1=): 
+User Dir 2 (UserDir2=): 
+User Dir 3 (UserDir3=): 
+User Dir 4 (UserDir4=): 
+===============================================================================
+CmdFile = H:\KGK2\DEVELOPMENT\VC#\COMPONENTS\CSLMAIL\HELP\DISTRIBUTION\h2reg_cmd.ini
+<windir> = C:\WINDOWS
+<winsysdir> = C:\WINDOWS\system32
+<programfilesdir> = C:\Program Files
+<exedir> = H:\KGK2\DEVELOPMENT\VC#\COMPONENTS\CSLMAIL\HELP\DISTRIBUTION
+<exedirparent> = H:\KGK2\Development\VC#\Components\CSLMail\Help
+<cmdfiledir> = H:\KGK2\Development\VC#\Components\CSLMail\Help\Distribution
+<cmdfiledirparent> = H:\KGK2\Development\VC#\Components\CSLMail\Help
+<userdir1> = 
+<userdir1parent> = 
+<userdir2> = 
+<userdir2parent> = 
+<userdir3> = 
+<userdir3parent> = 
+<userdir4> = 
+<userdir4parent> = 
+-------------------------------------------------------------------------------
+[Reg_Namespace]
+WinToolZone.cslmail|COL_cslmail.HxC|CSLMail
+
+[Reg_Title]
+WinToolZone.cslmail|cslmail|1033|cslmail.HxS|cslmail.HxS||||||
+
+[Reg_Plugin]
+MS.VSCC+|_DEFAULT|WinToolZone.cslmail|_DEFAULT|COL_cslmail.HxA
+
+[Reg_Filter]
+WinToolZone.cslmail|CSLMail|("DocSet"="cslmail")
+
+[UnReg_Namespace]
+WinToolZone.cslmail
+
+[UnReg_Title]
+WinToolZone.cslmail|cslmail|1033
+
+[UnReg_Plugin]
+MS.VSCC+|_DEFAULT|WinToolZone.cslmail|_DEFAULT|COL_cslmail.HxA
+
+[UnReg_Filter]
+WinToolZone.cslmail|CSLMail
+-------------------------------------------------------------------------------
+5:58:07 PM   [Reg_Namespace] - Lines To Process = 1
+5:58:07 PM     <nsName>="WinToolZone.cslmail"
+5:58:07 PM     <nsColfile>="H:\KGK2\Development\VC#\Components\CSLMail\Help\Distribution\COL_cslmail.HxC"
+5:58:07 PM     <nsDesc>="CSLMail"
+5:58:07 PM     +Mode = Not Enabled
+5:58:07 PM     Preparation: Old Namespace "WinToolZone.cslmail" successfully removed. Its important to start with a clean slate.
+5:58:07 PM    -->Registered OK
+-------------------------------------------------------------------------------
+5:58:07 PM   [Reg_Title] - Lines To Process = 1
+5:58:07 PM     <nsName>="WinToolZone.cslmail"
+5:58:07 PM     <TitleID>="cslmail"
+5:58:07 PM     <LangID>="1033"
+5:58:07 PM     <HxS_HelpFile>="H:\KGK2\Development\VC#\Components\CSLMail\Help\Distribution\cslmail.HxS"
+5:58:07 PM     <HxI_IndexFile>="H:\KGK2\Development\VC#\Components\CSLMail\Help\Distribution\cslmail.HxS"
+5:58:07 PM     <HxQ_QueryFile>=""
+5:58:07 PM     <HxR_AttrQueryFile>=""
+5:58:07 PM     <HxsMediaLoc>=""
+5:58:07 PM     <HxqMediaLoc>=""
+5:58:07 PM     <HxrMediaLoc>=""
+5:58:07 PM     <SampleMediaLoc>=""
+5:58:07 PM    -->Registered OK
+-------------------------------------------------------------------------------
+5:58:07 PM   [Reg_Plugin] - Lines To Process = 1
+5:58:07 PM     <nsName_Parent>="MS.VSCC+"
+5:58:07 PM     <HxT_Parent>="_DEFAULT"
+5:58:07 PM     <nsName_Child>="WinToolZone.cslmail"
+5:58:07 PM     <HxT_Child>="_DEFAULT"
+5:58:07 PM     <HxA_Child>="H:\KGK2\Development\VC#\Components\CSLMail\Help\Distribution\COL_cslmail.HxA"
+5:58:07 PM     NS Wild Card "MS.VSCC+" matches = 1 item(s): MS.VSCC.v80
+5:58:07 PM   Plug Child "WinToolZone.cslmail" into "MS.VSCC.v80"
+5:58:07 PM    -->Registered OK
+-------------------------------------------------------------------------------
+5:58:07 PM   [Reg_Filter] - Lines To Process = 1
+5:58:07 PM     <nsName>="WinToolZone.cslmail"
+5:58:07 PM     <FilterName>="CSLMail"
+5:58:07 PM     <FilterQueryStr>="("DocSet"="cslmail")"
+5:58:07 PM    -->Registered OK
+===============================================================================
+
+--END OF FILE--
+

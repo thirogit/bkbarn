@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./changelog.xsl"?>
+<changelog id="sdf-2.2-sp1">
+	<releasedate>April 16, 2008</releasedate>
+	<bugs>
+		<bug id="199" title="NetworkInterfaceSpeed returns same value as MTU" sev="normal" res="FIXED" />
+		<bug id="209" title="InvalidCastException if IP address changed more than once" sev="blocking" res="FIXED" />
+		<bug id="212" title="ListBox2 appears as a component in the designer" sev="major" res="FIXED" />
+		<bug id="226" title="Calling Rebind on WirelessNetworkInterface fails with an IOControl exception" sev="blocking" res="FIXED" />
+		<bug id="235" title="SetTimeZoneInformation does not set the selected timezone" sev="blocking" res="FIXED" />		
+		<bug id="236" title="SettingsFile has incorrect access modifier" sev="major" res="FIXED" />
+	</bugs>
+</changelog>

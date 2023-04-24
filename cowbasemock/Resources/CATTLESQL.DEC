@@ -1,0 +1,35 @@
+CREATE TABLE cattle
+(
+ean						NCHAR(14) NOT NULL PRIMARY KEY,	
+birthdate				DATETIME,
+sex						INT,		
+stock					INT,
+weight					NUMERIC(15,3) NOT NULL,
+passno					NCHAR(10),
+fstownralias			NCHAR(24),
+docin					INT NOT NULL,
+docout					INT,
+buyprice				NUMERIC(15,2),
+myprice                 NUMERIC(15,2),
+buystock				INT,
+buyweight				NUMERIC(15,3),
+action					NCHAR NOT NULL,
+outgrp					INT,
+ingrp					INT,
+
+termbuystock			INT,
+termbuyweight			NUMERIC(15,3),
+termsellstock			INT,
+termsellweight			NUMERIC(15,3),
+termbuyprice			NUMERIC(15,2),
+termsellprice			NUMERIC(15,2),
+hasbuyinv				INT,
+
+
+CONSTRAINT termbuystock_fk FOREIGN KEY (buystock) REFERENCES stocks(stockid),
+CONSTRAINT termsellstock_fk FOREIGN KEY (buystock) REFERENCES stocks(stockid),
+CONSTRAINT buystock_fk FOREIGN KEY (buystock) REFERENCES stocks(stockid),
+CONSTRAINT docin_fk 	 FOREIGN KEY (docin)      REFERENCES indocs(docno),
+CONSTRAINT docout_fk 	 FOREIGN KEY (docout)     REFERENCES outdocs(docno),
+CONSTRAINT stocks_fk 	 FOREIGN KEY (stock)     REFERENCES stocks(stockid)
+);

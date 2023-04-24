@@ -1,0 +1,13 @@
+CREATE TABLE outdocs
+(
+hent					INT NOT NULL,
+docdate					DATETIME NOT NULL,
+plateno					NVARCHAR(16) NOT NULL,
+loaddate				DATETIME NOT NULL,
+docno					INT PRIMARY KEY,
+reason					INT NOT NULL,
+action					NCHAR NOT NULL,
+
+CONSTRAINT buyer_fk 	 	 FOREIGN KEY (hent)     REFERENCES hents(hentid),
+CONSTRAINT outreason_fk	 	 FOREIGN KEY (reason)     REFERENCES inoutreasons(reasonid)
+);

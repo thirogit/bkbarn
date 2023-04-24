@@ -1,0 +1,5 @@
+CREATE TABLE henttypes
+(
+henttypeid			INT PRIMARY KEY,
+henttypename		NVARCHAR(32)  NOT NULL
+);

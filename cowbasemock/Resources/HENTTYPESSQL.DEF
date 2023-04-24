@@ -1,0 +1,2 @@
+INSERT INTO henttypes(henttypeid,henttypename) VALUES(1,'Firma');
+INSERT INTO henttypes(henttypeid,henttypename) VALUES(2,'Indywidualny');

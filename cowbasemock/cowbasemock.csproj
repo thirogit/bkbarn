@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3B082F76-BDA6-4301-B6D6-3B687C1DE8EE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cowbasemock</RootNamespace>
+    <AssemblyName>cowbasemock</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;COWBASEMOCK</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;COWBASEMOCK</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\log4net-1.2.10\bin\net\2.0\debug\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenNETCF.Net.Mail, Version=2.3.0.39, Culture=neutral, PublicKeyToken=e60dbea84bb431b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenNETCF\Smart Device Framework\2.3\Bin\OpenNETCF.Net.Mail.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenNETCF.Windows.Forms, Version=2.3.0.39, Culture=neutral, PublicKeyToken=e60dbea84bb431b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenNETCF\Smart Device Framework\2.3\Bin\OpenNETCF.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\cowbase\Action.cs">
+      <Link>Action.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\AskYesNo.cs">
+      <Link>AskYesNo.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\BCDevice.cs">
+      <Link>BCDevice.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\BigOKMessageBox.cs">
+      <Link>BigOKMessageBox.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\ButtonList.cs">
+      <Link>ButtonList.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\Buzzer.cs">
+      <Link>Buzzer.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\BuzzerDevice.cs">
+      <Link>BuzzerDevice.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\CattleBaseSQL.cs">
+      <Link>CattleBaseSQL.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\CATTLEInsertState.cs">
+      <Link>CATTLEInsertState.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\CATTLESyncState.cs">
+      <Link>CATTLESyncState.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\CenterForm.cs">
+      <Link>CenterForm.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\ChooseGroup.cs">
+      <Link>ChooseGroup.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\ChooseSex.cs">
+      <Link>ChooseSex.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\ChooseStock.cs">
+      <Link>ChooseStock.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\ClientSocket.cs">
+      <Link>ClientSocket.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\CloseChunk.cs">
+      <Link>CloseChunk.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\CloseChunk.designer.cs">
+      <Link>CloseChunk.designer.cs</Link>
+      <DependentUpon>CloseChunk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\cowbase\CowData.cs">
+      <Link>CowData.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\CowDetails.cs">
+      <Link>CowDetails.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\CowDetails.designer.cs">
+      <Link>CowDetails.designer.cs</Link>
+      <DependentUpon>CowDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\cowbase\CowGroupAccessor.cs">
+      <Link>CowGroupAccessor.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\CowItemStringFormetter.cs">
+      <Link>CowItemStringFormetter.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\CowListBox.cs">
+      <Link>CowListBox.cs</Link>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\CowSex.cs">
+      <Link>CowSex.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\CSVReader.cs">
+      <Link>CSVReader.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\DispatchState.cs">
+      <Link>DispatchState.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\DocData.cs">
+      <Link>DocData.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\DocItemStringFormatter.cs">
+      <Link>DocItemStringFormatter.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\DocListBox.cs">
+      <Link>DocListBox.cs</Link>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\DocListView.cs">
+      <Link>DocListView.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\DOCSyncState.cs">
+      <Link>DOCSyncState.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\EaringBCReader.cs">
+      <Link>EaringBCReader.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\EditCow.cs">
+      <Link>EditCow.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\EditInDoc.cs">
+      <Link>EditInDoc.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\EditOutDoc.cs">
+      <Link>EditOutDoc.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\EnterEANForm.cs">
+      <Link>EnterEANForm.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\FindCowByEAN.cs">
+      <Link>FindCowByEAN.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\GoodBadNotify.cs">
+      <Link>GoodBadNotify.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\HENTSInsertState.cs">
+      <Link>HENTSInsertState.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\InDocCowGroupAccessor.cs">
+      <Link>InDocCowGroupAccessor.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\InDocCowItemStringFormetter.cs">
+      <Link>InDocCowItemStringFormetter.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\InDocListView.cs">
+      <Link>InDocListView.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\InDocPassSearchDlg.cs">
+      <Link>InDocPassSearchDlg.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\INDOCSInsertState.cs">
+      <Link>INDOCSInsertState.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\INDOCSSyncState.cs">
+      <Link>INDOCSSyncState.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\ItemStringFormatter.cs">
+      <Link>ItemStringFormatter.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\Keypad.cs">
+      <Link>Keypad.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\LOG.cs">
+      <Link>LOG.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\LogString.cs">
+      <Link>LogString.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\MainForm.cs">
+      <Link>MainForm.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\MemoryUsage.cs">
+      <Link>MemoryUsage.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\MyPriceCalculator.cs">
+      <Link>MyPriceCalculator.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\NewChunk.cs">
+      <Link>NewChunk.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\NewChunk.designer.cs">
+      <Link>NewChunk.designer.cs</Link>
+      <DependentUpon>NewChunk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\cowbase\NewDocForm.cs">
+      <Link>NewDocForm.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\NewInDoc.cs">
+      <Link>NewInDoc.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\NewOrEdit.cs">
+      <Link>NewOrEdit.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\NewOutDoc.cs">
+      <Link>NewOutDoc.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\NewOutDocChunkCowValidator.cs">
+      <Link>NewOutDocChunkCowValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\NmKeypad.cs">
+      <Link>NmKeypad.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\Options.cs">
+      <Link>Options.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\Options.Designer.cs">
+      <Link>Options.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\OutboxDirAppender.cs">
+      <Link>OutboxDirAppender.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\OutDocCowGroupAccessor.cs">
+      <Link>OutDocCowGroupAccessor.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\OutDocCowItemStringFormatter.cs">
+      <Link>OutDocCowItemStringFormatter.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\OutDocListView.cs">
+      <Link>OutDocListView.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\OutDocPassSearchDlg.cs">
+      <Link>OutDocPassSearchDlg.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\OUTDOCSSyncState.cs">
+      <Link>OUTDOCSSyncState.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\OwnerDataListBox.cs">
+      <Link>OwnerDataListBox.cs</Link>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\PassSearchCowItem.cs">
+      <Link>PassSearchCowItem.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\PassSearchCowItemStringFormetter.cs">
+      <Link>PassSearchCowItemStringFormetter.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\PassSearchCowListBox.cs">
+      <Link>PassSearchCowListBox.cs</Link>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\PassSearchDlg.cs">
+      <Link>PassSearchDlg.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\SearchPassInInDocs.cs">
+      <Link>SearchPassInInDocs.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\SearchPassInOutDocs.cs">
+      <Link>SearchPassInOutDocs.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\Settings.cs">
+      <Link>Settings.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\SQLBuilder.cs">
+      <Link>SQLBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\Stock.cs">
+      <Link>Stock.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\STOCKSInsertState.cs">
+      <Link>STOCKSInsertState.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\SymbolBCDevice.cs">
+      <Link>SymbolBCDevice.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\SyncLockMessage.cs">
+      <Link>SyncLockMessage.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\SyncState.cs">
+      <Link>SyncState.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\TableFactory.cs">
+      <Link>TableFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\TableInsertFactory.cs">
+      <Link>TableInsertFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\TableInsertState.cs">
+      <Link>TableInsertState.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\TableSyncFactory.cs">
+      <Link>TableSyncFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\TermSellValuesDistributeStrategy.cs">
+      <Link>TermSellValuesDistributeStrategy.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\ThreeBtnsOpt.cs">
+      <Link>ThreeBtnsOpt.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\ThreeBtnsOpt.Designer.cs">
+      <Link>ThreeBtnsOpt.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\UpdateCattle.cs">
+      <Link>UpdateCattle.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\cowbase\Utils.cs">
+      <Link>Utils.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\wheres\AndWhere.cs">
+      <Link>wheres\AndWhere.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\wheres\CowInStockWhere.cs">
+      <Link>wheres\CowInStockWhere.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\wheres\CowWhere.cs">
+      <Link>wheres\CowWhere.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\wheres\EanWhere.cs">
+      <Link>wheres\EanWhere.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\wheres\InDocNoWhere.cs">
+      <Link>wheres\InDocNoWhere.cs</Link>
+    </Compile>
+    <Compile Include="..\cowbase\wheres\OutDocNoWhere.cs">
+      <Link>wheres\OutDocNoWhere.cs</Link>
+    </Compile>
+    <Compile Include="BCManualInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCManualInput.Designer.cs">
+      <DependentUpon>BCManualInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MockBCDevice.cs" />
+    <Compile Include="MockBuzzer.cs" />
+    <Compile Include="MyListbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="..\cowbase\AskYesNo.resx">
+      <Link>AskYesNo.resx</Link>
+      <DependentUpon>AskYesNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\cowbase\BigOKMessageBox.resx">
+      <Link>BigOKMessageBox.resx</Link>
+      <DependentUpon>BigOKMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\cowbase\ButtonList.resx">
+      <Link>ButtonList.resx</Link>
+      <DependentUpon>ButtonList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\cowbase\CloseChunk.resx">
+      <Link>CloseChunk.resx</Link>
+      <DependentUpon>CloseChunk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\cowbase\CowDetails.resx">
+      <Link>CowDetails.resx</Link>
+      <DependentUpon>CowDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\cowbase\DocListView.resx">
+      <Link>DocListView.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\cowbase\EditCow.resx">
+      <Link>EditCow.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\cowbase\EditOutDoc.resx">
+      <Link>EditOutDoc.resx</Link>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\cowbase\MainForm.resx">
+      <Link>MainForm.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\cowbase\MyPriceCalculator.resx">
+      <Link>MyPriceCalculator.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\cowbase\NewChunk.resx">
+      <Link>NewChunk.resx</Link>
+      <DependentUpon>NewChunk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\cowbase\NewDocForm.resx">
+      <Link>NewDocForm.resx</Link>
+      <DependentUpon>NewDocForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\cowbase\NmKeypad.resx">
+      <Link>NmKeypad.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\cowbase\Options.resx">
+      <Link>Options.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\cowbase\ThreeBtnsOpt.resx">
+      <Link>ThreeBtnsOpt.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\cowbase\UpdateCattle.resx">
+      <Link>UpdateCattle.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BCManualInput.resx">
+      <DependentUpon>BCManualInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\CATTLESQL.DEC" />
+    <None Include="Resources\HENTSSQL.DEC" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HENTTYPESSQL.DEF" />
+    <None Include="Resources\INDOCSSQL.DEC" />
+    <None Include="Resources\OUTDOCSSQL.DEC" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REASONSSQL.DEF" />
+    <None Include="Resources\STOCKSSQL.DEC" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HENTTYPESSQL.DEC" />
+    <None Include="Resources\REASONSSQL.DEC" />
+    <None Include="Resources\SYNCLOCKSQL.DEC" />
+    <None Include="Resources\SYNCLOCKSQL.DEF" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gma.UserActivityMonitor\Gma.UserActivityMonitor.csproj">
+      <Project>{F52AA97E-180A-40ED-8F2B-09080171D6C7}</Project>
+      <Name>Gma.UserActivityMonitor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>"$(SolutionDir)IncBuildNo" "$(ProjectDir)Properties\AssemblyInfo.cs" $(ConfigurationName)</PostBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

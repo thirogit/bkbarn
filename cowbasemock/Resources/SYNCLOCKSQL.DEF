@@ -1,0 +1,1 @@
+INSERT INTO synclock(lockid,locktime,lock) VALUES(1,GETDATE(),0);

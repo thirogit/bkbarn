@@ -1,0 +1,16 @@
+CREATE TABLE hents
+(
+hentid					INT PRIMARY KEY,
+alias					NVARCHAR(24) NOT NULL,
+name					NVARCHAR(64) NOT NULL,
+zip 					NVARCHAR(10),
+city					NVARCHAR(48),
+street					NVARCHAR(48),
+pobox					NVARCHAR(10),
+arimrno					NCHAR(14),
+plate					NVARCHAR(16),
+henttype				INT NOT NULL,
+
+
+CONSTRAINT henttypes_fk FOREIGN KEY (henttype) REFERENCES henttypes(henttypeid)
+);

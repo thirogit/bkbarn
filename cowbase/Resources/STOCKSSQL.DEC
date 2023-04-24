@@ -1,0 +1,6 @@
+CREATE TABLE stocks			
+(
+stockcode				NVARCHAR(8) NOT NULL UNIQUE,
+predefsex				INT,
+stockid					INT PRIMARY KEY
+);

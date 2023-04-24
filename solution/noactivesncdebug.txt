@@ -1,0 +1,27 @@
+You dont require ActiveSync to debug a WinCE 5.0 device. This error appears when the connection could not be made with current settings.
+
+In Tools --> Options , Select Win CE 5.0 and click the properties. Click the configure button.
+
+Verify the following
+
+    Use specific Ip address option is selected and the IP address is same as that of IPaddress of the device
+    Use fixed port number is uncheked
+
+(extract from http://msdn2.microsoft.com/en-us/library/ms228708.aspx)
+
+copy the following files to the \Windows\ folder on the device. These files are located on the development computer by default at \Program Files\Common Files\Microsoft Shared\CoreCon\1.0\Target\wce400\<CPU>.
+
+    Clientshutdown.exe
+    ConmanClient2.exe
+    CMaccept.exe
+    eDbgTL.dll
+
+    TcpConnectionA.dll
+
+    From the command prompt on the device, run conmanclient2.exe.
+
+    Run CMaccept.exe
+
+In Visual Studio, do 'Connect to device' from tools menu.
+
+Select WinCE 5.0 device. Now connection should succeed.

@@ -1,0 +1,6 @@
+CREATE TABLE synclock		
+(
+lockid					INT PRIMARY KEY,
+locktime				DATETIME,
+lock					INT NOT NULL
+);

@@ -1,0 +1,7 @@
+CREATE TABLE inoutreasons			
+(
+reasonid				INT PRIMARY KEY,
+reasoncode				NVARCHAR(5) NOT NULL,
+reasonname				NVARCHAR(48),
+inoutreason				INT NOT NULL
+);
